@@ -244,6 +244,7 @@ textarea {
 }
 
 .submit-btn {
+    cursor: pointer;
     display: block;
     margin-left: auto;
 }

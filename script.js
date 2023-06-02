@@ -5,26 +5,27 @@ function init() {
   menuButton.addEventListener('click', toggleMenu);
 
   const formElement = document.getElementById('contact-form');
-  formElement.addEventListener('submit', (event) => handleSubmit(event));
+
+  const submitButton = document.getElementById('submit-button');
+  submitButton.addEventListener('click', (event) => handleSubmit(formElement));
 }
 
-async function handleSubmit(event) {
-  event.preventDefault();
-  const form = event.target;
+async function handleSubmit(formElement) {
 
-  const formData = new FormData(form);
+  const formData = new FormData(formElement);
   for (var [key, value] of formData.entries()) {
     console.log(key, value);
   }
 
-  await fetch('/contact', {
-    method: 'post',
-    body: formData,
-  })
-    .then((response) => response.json())
-    .then((data) => showResult(data.message));
+  // await fetch('/contact', {
+  //   method: 'post',
+  //   body: formData,
+  // })
+  //   .then((response) => response.json())
+  //   .then((data) => showResult(data.message));
 
-  event.target.classList.add('hidden');
+  formElement.classList.add('hidden');
+  alert('submitting form')
 }
 
 function showResult(text) {
