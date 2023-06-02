@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head lang="de">
+  <title>Boulder Base</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <button id="menu-btn" class="menu-btn">
+        <img src="img/menu.svg" alt="menu button" />
+      </button>
+      <h1 class="headline-1">Boulder-Base</h1>
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a href="http://google.de">Menüpunkt 1</a>
+          </li>
+          <li><a href="http://google.de">Menüpunkt 2</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <a href="http://google.de" class="main-teaser">
+      <picture>
+        <source
+          media="(min-width: 800px)"
+          srcset="img/boulder_teaser_900w.png"
+        />
+        <img src="img/boulder_teaser_343w.png" alt="Frau an Kletterwand" />
+      </picture>
+      <div class="teaser-text">
+        <h2>Die besten Boulderhallen</h2>
+        <span class="btn primary">Jetzt entdecken</span>
+      </div>
+    </a>
+    <h2>Aktuelles</h2>
+    <section class="teaser-grid">
+      <article>
+        <a href="http://google.de">
+          <img src="img/boulder-halls-teaser.png" alt="" />
+          <h3>Kletterhallen</h3>
+          <span>Lorem Ipsum Dolor</span>
+        </a>
+      </article>
+      <article>
+        <a href="http://google.de">
+          <img src="img/equipment-teaser.png" alt="Equipment" />
+          <h3>Equipment</h3>
+          <span>Lorem Ipsum Dolor</span>
+        </a>
+      </article>
+      <article>
+        <a href="http://google.de">
+          <img src="img/indoor-teaser.png" alt="Indoor" />
+          <h3>Indoor</h3>
+          <span>Lorem Ipsum Dolor</span>
+        </a>
+      </article>
+      <article>
+        <a href="http://google.de">
+          <img src="img/outdoor-teaser.png" alt="Outdoor" />
+          <h3>Outdoor</h3>
+          <span>Lorem Ipsum Dolor</span>
+        </a>
+      </article>
+    </section>
+    <h2>Kontakt</h2>
+    <form class="contact-form" id="contact-form">
+      <div class="input-wrapper">
+        <label for="name-input">Name</label>
+        <input type="text" name="name" id="name-input" required />
+      </div>
+      <div class="input-wrapper">
+        <label for="mail-input">E-Mail-Adresse </label>
+        <input type="email" name="e-mail" id="mail-input" required />
+      </div>
+      <div class="input-wrapper">
+        <label for="message-textarea">Deine Nachricht </label>
+        <textarea name="message" id="message-textarea" required></textarea>
+      </div>
+      <div class="checkbox-wrapper">
+        <label for="newsletter-checkbox" class="checkbox-label">
+          <input type="checkbox" name="newsletter" id="newsletter-checkbox" />
+          Bitte schickt mir euren Newsletter</label
+        >
+      </div>
+      <button class="btn secondary submit-btn" type="submit">Abschicken</button>
+    </form>
+  </main>
+  <footer>
+    <a href="http://google.de">Impressum</a>
+    <a href="http://google.de">Datenschutz</a>
+  </footer>
+</body>
