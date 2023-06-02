@@ -132,6 +132,7 @@ main {
     border-radius: 100px;
     border: none;
     color: black;
+    cursor: pointer;
     font-family: 'Roboto', 'Franklin Gothic Medium', Tahoma, sans-serif;
     font-size: 14px;
     font-weight: normal;

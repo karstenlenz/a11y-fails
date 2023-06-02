@@ -2,12 +2,14 @@ window.onload = init;
 
 function init() {
   const menuButton = document.querySelector('#menu-btn');
+  const teaserButton = document.querySelector('#teaser-button');
   menuButton.addEventListener('click', toggleMenu);
 
   const formElement = document.getElementById('contact-form');
 
   const submitButton = document.getElementById('submit-button');
   submitButton.addEventListener('click', (event) => handleSubmit(formElement));
+  teaserButton.addEventListener('click', (event) => navigateToUrl('https://www.iteratec.com'));
 }
 
 async function handleSubmit(formElement) {
@@ -39,4 +41,8 @@ function showResult(text) {
 function toggleMenu() {
   const navElement = document.querySelector('.navigation');
   navElement.classList.toggle('menu-open');
+}
+
+function navigateToUrl(url) {
+window.location.href = url
 }
