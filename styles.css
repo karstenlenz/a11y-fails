@@ -37,6 +37,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', 'Franklin Gothic Medium', Tahoma, sans-serif;
+    font-size: 12px;
     font-weight: normal;
 }
 
@@ -132,7 +133,7 @@ main {
     border: none;
     color: black;
     font-family: 'Roboto', 'Franklin Gothic Medium', Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     padding: 16px;
     width: min-content;
@@ -213,7 +214,7 @@ main {
 textarea {
     background-color: transparent;
     border: none;
-    font-size: 16px;
+    font-size: 12px;
     padding: 0 8px;
     padding: 4px 8px;
 }
