@@ -10,6 +10,10 @@ function init() {
   const submitButton = document.getElementById('submit-button');
   submitButton.addEventListener('click', (event) => handleSubmit(formElement));
   teaserButton.addEventListener('click', (event) => navigateToUrl('https://www.iteratec.com'));
+
+  const modalElement =  document.getElementById('modal');
+  const closeModalButton =  document.getElementById('close-modal-btn');
+  closeModalButton.addEventListener('click', ()=> modalElement.classList.add('hidden') )
 }
 
 async function handleSubmit(formElement) {

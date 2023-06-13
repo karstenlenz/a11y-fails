@@ -34,20 +34,43 @@
 }
 
 body {
-    padding: 0;
-    margin: 0;
     font-family: 'Roboto', 'Franklin Gothic Medium', Tahoma, sans-serif;
     font-size: 12px;
     font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    background-color: #000000bb;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 4px;
+    margin: 100px auto;
+    padding: 16px;
+    width: 500px;
+}
+
+.modal-headline {
+    color: var(--dark-purple);
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 8px 0;
 }
 
 .headline-1 {
-    text-align: center;
-    margin-top: 0;
     font-weight: normal;
-    position: relative;
-    width: 100%;
     left: -20px;
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
 
 .headline-2 {
