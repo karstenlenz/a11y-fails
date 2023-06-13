@@ -90,16 +90,16 @@ a:visited {
     border: none;
 }
 
-nav {
+.navigation {
     display: none;
 }
 
-nav ul {
+.navigation ul {
     display: flex;
     flex-direction: column;
 }
 
-nav li,
+.navigation li,
 a {
     list-style: none;
     color: black;
@@ -276,18 +276,18 @@ textarea {
         padding: 16px;
     }
 
-    nav {
+    .navigation {
         display: block;
     }
 
-    nav ul {
+    .navigation ul {
         display: flex;
         flex-direction: row;
         gap: 16px;
         justify-content: end;
     }
 
-    nav li,
+    .navigation li,
     a {
         list-style: none;
         color: black;
