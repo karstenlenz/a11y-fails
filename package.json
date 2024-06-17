@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "exercises": "parcel ./wcag-excercises/index.html",
+    "dev": "parcel ./index.html",
+    "improved": "parcel improved/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
