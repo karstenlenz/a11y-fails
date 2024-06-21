@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "exercises": "parcel ./wcag-excercises/index.html",
+    "exercises": "parcel ./wcag-exercises/index.html",
     "dev": "parcel ./index.html",
     "improved": "parcel improved/index.html"
   },
