@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>3.3 Input Assisstance</title>
+    <link rel="stylesheet" href="3_3_input_assistance.css" />
+    <script defer src="3_3_input_assistance.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <main class="main-content">
+        <h1>Beispiele</h1>
+        <form action="#" name="contactForm" onsubmit="return validateForm(event)" novalidate>
+            <label>Name</label>
+            <input type="text" id="name" required novalidate>
+            <input type="email" id="email" placeholder="E-Mail" novalidate>
+            <label for="message">Deine Nachricht</label>
+            <textarea type="text" id="message" required novalidate></textarea>
+                <button type="submit" aria-label="Submit form">Abschicken</button>
+            </form>
+    </main>
+
+</body>
+
+</html>

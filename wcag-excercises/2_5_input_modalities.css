@@ -80,11 +80,3 @@ button.FAB {
     max-width: 60ch;
     margin: 1rem auto;
 }
-
-a {
-    outline-color: lightblue;
-}
-
-.footer a {
-    outline: none;
-}
